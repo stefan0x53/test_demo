@@ -10,12 +10,13 @@ Cross-platform java rest event server and C++ event logger server installation i
 
 Compilation
 ------------------------------
-First install the following dependencies for your platform:
+First install the following dependencies based on your platform's installation instructions:
  * Java: Install jdk 1.8 and maven
  * Protobuf: download [java package](https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-java-3.5.1.zip)
- and [compile and install the c++ runtime](https://github.com/google/protobuf/blob/master/src/README.md) that is included
+ and [compile and install the c++ runtime](https://github.com/google/protobuf/blob/master/src/README.md),
+ which is included inot the package
  * Qt: [download](https://www.qt.io/download) the open-source version and install it
- * 
+ *  
 
 
 Deploy and Test

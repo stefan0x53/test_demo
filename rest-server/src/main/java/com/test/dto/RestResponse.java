@@ -1,4 +1,4 @@
-package konux;
+package com.test.dto;
 
 public class RestResponse {
 

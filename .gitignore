@@ -1,0 +1,8 @@
+.DS_Store
+
+*.pro.user
+
+.idea/
+.mvn/
+*.iml
+rest-server/target/
