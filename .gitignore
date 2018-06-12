@@ -1,6 +1,8 @@
 .DS_Store
 
 *.pro.user
+event-logger/build/
+*.autosave
 
 .idea/
 .mvn/

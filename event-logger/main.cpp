@@ -1,26 +1,14 @@
 #include <QCoreApplication>
-#include <QTcpServer>
+
+#include "messageservice.h"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+    QCoreApplication app(argc, argv);
 
-    QTcpServer server = new QTcpServer(&a);
+    // QT will cleanup MessageService when application dies
+    MessageService* service = new MessageService(&app);
+    service->startListening();
 
-    server.listen(QHostAddress::Any, 12345);
-
-    int numRead = 0, numReadTotal = 0;
-    char buffer[50];
-
-    forever {
-        numRead  = socket.read(buffer, 50);
-
-        // do whatever with array
-
-        numReadTotal += numRead;
-        if (numRead == 0 && !socket.waitForReadyRead())
-            break;
-    }
-
-    return a.exec();
+    return app.exec();
 }
